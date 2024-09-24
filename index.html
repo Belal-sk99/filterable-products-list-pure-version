@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Filterable Product List</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+
+  <h1> Products List </h1>
+
+  
+  <div class="filter-container">
+    <label> Filter by Category: </label>
+    <select id="categoryFilter">
+      <option value="All">All</option>
+      <option value="Electronics">Electronics</option>
+      <option value="Clothing">Clothing</option>
+      <option value="Books">Books</option>
+      <option value="cars">Cars</option>
+    </select>
+  </div>
+
+  <div class="sort-container">
+    <label> Sort by : </label>
+    <select id="sortSelector">
+      <option value="none">none</option>
+      <option value="price">price</option>
+      <option value="category">Category</option>
+      <option value="name">Name</option>
+    </select>
+
+    <button id="sortMethod">
+    </button>
+  </div>
+
+  
+  <div id="productContainer" class="product-container">
+
+  </div>
+
+  <script src="./index.js"></script>
+</body>
+</html>
