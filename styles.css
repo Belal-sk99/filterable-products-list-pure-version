@@ -1,0 +1,113 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #ebebeb;
+  }
+  
+  h1 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  
+  .filter-container, .sort-container {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 20px ;
+  }
+
+
+  .sort-container > button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    height: 30px;
+    background-color: rgba(255, 255, 255, 0.903);
+    margin-left: 10px ;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 2px 5px gray;
+    transition: all .25s ;
+    font-weight:bold;
+  }
+
+  .sort-container > button:hover{
+    box-shadow: 0px 2px 15px gray;
+  }
+  .sort-container > button:active{
+    opacity: .5;
+  }
+
+
+  select {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+  }
+  
+  select:hover {
+    background-color: #eaeaea;
+  }
+  
+
+  .product-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+  }
+  
+
+  .product-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    text-align: center;
+    transition: transform 0.2s ease;
+  }
+  
+  .product-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  
+  .product-name {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+  }
+  
+  .product-price {
+    color: green;
+    font-weight: bold;
+    font-size: 130%;
+  }
+  
+  .product-category {
+    color: #868686;
+    cursor: pointer;
+    text-align: start;
+    transition: all .25s ease-out;
+    user-select: none;
+  }
+
+  .product-category:hover{
+    color: blue;
+  }
+  
+  .product-category:active{
+    opacity: .5;
+  }
+
